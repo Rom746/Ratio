@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+
+    @media (max-height: $breakpointExSmall) {
+        position: absolute;
+        left: 40%;
+    }
+
+    &__title {
+        font-size: calc(40px + 80 * ((100vw - 320px) / 2240));
+        font-weight: 800;
+    }
+}

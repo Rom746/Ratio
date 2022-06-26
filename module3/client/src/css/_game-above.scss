@@ -1,0 +1,28 @@
+.above {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    @media (min-width: $breakpointMedium) {
+        justify-content: space-around;
+    }
+
+    &__score {
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        background-color: $color--secondary;
+        cursor: pointer;
+    }
+
+    &__score-container {
+        padding: 0 16px;
+        text-align: center;
+        font-size: calc(16px + 22 * ((100vw - 320px) / 2240));
+        span {
+            font-weight: 400;
+            font-size: 0.7em;
+        }
+    }
+}

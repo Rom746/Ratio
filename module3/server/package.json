@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:start": "D:/dataBase/bin/mongod --dbpath=D:/dataBase/data/ratio",
+    "db:migrate": "migrate-mongo up",
+    "dev": "nodemon index.js",
+    "start:db": "npm run db:start && npm run db:migrate",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "migrate-mongo": "^9.0.0",
+    "mongodb": "^4.7.0"
+  }
+}

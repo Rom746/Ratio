@@ -1,0 +1,22 @@
+.record-table {
+
+    &__list {
+        width: 70%;
+        margin: auto;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        // gap: 50%;
+        padding-bottom: 10px;
+        &:first-child {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__text {
+        font-size: calc(20px + 40 * ((100vw - 320px) / 2240));
+    }
+}
+

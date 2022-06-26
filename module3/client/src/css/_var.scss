@@ -1,0 +1,52 @@
+// Breakpoint
+
+$breakpointLarge: 1400 + px;
+$breakpointMedium: 992 + px;
+$breakpointSmall: 768 + px;
+$breakpointExSmall: 479 + px;
+
+// Size numb
+
+$size-num: (
+        1: 2,
+        2: 1.75,
+        3: 1.25,
+        4: 1,
+        5: 0.75
+);
+
+// Colors
+
+$color--primary: #9379BE;
+$color--primary-a: rgba(147, 121, 190, 0.849);
+$color--secondary: #57407c;
+$color--error: red;
+$white: #fff;
+
+
+// Mixin and keyframes
+
+@keyframes vnew {
+    0% {
+      opacity: 0;
+      transform: scale(0); 
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1); 
+    } 
+}
+@keyframes merged {
+    0% {
+      transform: scale(0); 
+    }
+  
+    50% {
+      transform: scale(1.2); 
+    }
+  
+    100% {
+      transform: scale(1); 
+    } 
+}

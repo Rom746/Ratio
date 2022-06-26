@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2048 game">
+  <meta name="Keywords" content="2048, game">
+  <link rel="icon" type="image/svg+xml" href="./src/img/favicon.svg" />
+  <title>2048</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">2048</h1>
+    </header>
+    <main class="game">
+      <section class="game__above above">
+        <a href="#" class="button button-restart ">New Game</a>
+        <a href="#" class="button button-next disable ">World record</a>
+        <div class="above__score">
+          <div class="above__score-container">
+            <span>SCORE</span>
+            <div class="score__container">0</div>
+          </div>
+          <div class="above__score-container">
+            <span>BEST</span>
+            <div class="best__container">0</div>
+          </div>
+
+        </div>
+      </section>
+      <section class="game__container">
+        <div class="game__message message">
+          <p class="message__text">Game over</p>
+          <div class="message__buttons">
+            <a href="#" class="button button-restart message__btn">Retry Game</a>
+            <a href="#" class="button button-keep message__btn">To keep playing</a>
+          </div>
+        </div>
+        <ul class="game__grid">
+        </ul>
+        <ul class="game__tiles">
+        </ul>
+      </section>
+      <section class="game__record record-table disable">
+        <p class="record-table__title">record Table</p>
+        <ul class="record-table__list">
+          <li class="record-table__item"></li>
+        </ul>
+      </section>
+    </main>
+    <!-- кнопка для тестирования -->
+    <button class="test" hidden> Tested </button>
+  </div>
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
