@@ -1,0 +1,29 @@
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $color--primary;
+
+    &.--lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1346px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    border: 1px solid red;
+}
+

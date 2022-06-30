@@ -1,8 +1,5 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #ed381d;
-  margin-top: 60px;
-}
+@import './reset';
+@import './var';
+@import './fonts';
+@import './global';
+@import './header';
