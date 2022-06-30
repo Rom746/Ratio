@@ -29,17 +29,23 @@
         }
 
         @media (min-width: $breakpointMedium) {
-            padding-bottom: 21px;
+            padding-bottom: 96px;
 
             &::before {
-                top: 112px;
-                left: calc(50% - 95px);
-                width: 190px;
+                top: 54px;
+                left: calc(50% - 110px);
+                width: 220px;
             }
         }
 
         @media (min-width: $breakpointLarge) {
-            padding-top: 38px;
+            padding-bottom: 21px;
+
+            &::before {
+                top: 73px;
+                left: calc(50% - 95px);
+                width: 190px;
+            }
         }
     }
 
