@@ -21,7 +21,7 @@
 }
 
 .logo {
-    padding: 17px 0 9px 16px;
+    padding: 17px 0 4px 16px;
     position: relative;
 
     font-size: 30px;
@@ -40,7 +40,25 @@
         left: 0;
         top: 0;
         background-color: $color--primary;
+        
+    }
 
+    &:hover {
+
+        transition: .5s;
+        color: $white;
+        background-color: $color--primary;
+
+        
+
+        &::after {
+
+            color: $color--primary;
+            background-color: $white;
+            transition: .4s;
+            
+            
+        }
     }
 
 }
