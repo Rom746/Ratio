@@ -9,7 +9,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px; 
     line-height: 24px;
 
     color: $color--primary;
@@ -17,13 +17,33 @@ body {
     &.--lock {
         overflow: hidden;
     }
+
+    @media (min-width: $breakpointMedium) {
+        font-size: 16px;
+    }
 }
 
 .container {
-    max-width: 1346px;
-    padding: 0 15px;
+    max-width: 1366px;
+    padding: 0 25px;
     margin: 0 auto;
 
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
+h2 {
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (min-width: $breakpointMedium) {
+        font-size: 24px;
+        line-height: 29px
+    }
+
+    @media (min-width: $breakpointLarge) {
+        font-size: 33px;
+        line-height: 41px; 
+    }
+}
