@@ -63,11 +63,6 @@
         line-height: 16px;
         color: $color--secondary;
 
-        @media (min-width: $breakpointMedium) {
-            // font-size: 14px; 
-            // line-height: 20px; 
-        }
-
         @media (min-width: $breakpointLarge) {
             padding-top: 12px;
             padding-bottom: 14px;
