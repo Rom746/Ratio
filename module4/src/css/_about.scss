@@ -1,0 +1,17 @@
+.about {
+
+    &__inner {
+        max-width: 856px;
+        margin: 0 auto;
+    }
+
+    &__content {
+
+        padding-top: 32px;
+
+        :first-child{
+            display: flex;
+            gap: 38px;
+        }
+    }
+}
