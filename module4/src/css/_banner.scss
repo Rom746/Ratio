@@ -4,12 +4,6 @@
 
         margin: 12px 0;
 
-        &--top {
-            background: linear-gradient(0deg, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 0.1)), url(../img/banner.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
 
         &--article {
             min-height: 200px;
@@ -20,13 +14,7 @@
             padding-left: 45px;
             max-width: 100%;
             height: 592px;
-
-            // &--top {
-            //     background: linear-gradient(0deg, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 0.1)), url(../img/banner.png);
-            //     background-repeat: no-repeat;
-            //     background-position: center;
-            //     background-size: cover;
-            // }
+            position: relative;
 
             &--bottom {
                 background: linear-gradient(0deg, rgba(28, 28, 28, 0.1), rgba(28, 28, 28, 0.1)), url(../img/banner-2.png);
@@ -45,6 +33,18 @@
 
                 padding-right: 78px;
             }
+        }
+    }
+
+    &__image {
+
+        @media (min-width: $breakpointMedium) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
         }
     }
 
