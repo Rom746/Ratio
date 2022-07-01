@@ -9,9 +9,18 @@
 
         padding-top: 32px;
 
-        :first-child{
+        :first-child {
             display: flex;
             gap: 38px;
+
+            @media (max-width: $breakpointMedium) {
+                flex-direction: column-reverse;
+                align-items: center;
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }

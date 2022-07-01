@@ -4,7 +4,7 @@ const burgerMenu = () => {
     const menu = document.querySelector('.menu__list');
     const button = document.querySelector('.menu__button');
     const buttonLine = document.querySelector('.menu__button-line');
-    const links = document.querySelectorAll('.menu__list-link');
+    // const links = document.querySelectorAll('.menu__list-link');
 
     const toggleMenu = () => {
         buttonLine.classList.toggle('menu__button-line--active');
@@ -13,7 +13,7 @@ const burgerMenu = () => {
     }
 
     button.addEventListener('click', toggleMenu);
-    links.forEach(link => link.addEventListener('click', toggleMenu));
+    // links.forEach(link => link.addEventListener('click', toggleMenu));
 }
 
 burgerMenu();

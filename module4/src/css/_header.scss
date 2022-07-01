@@ -56,12 +56,12 @@
             transition: .4s;
         }
     }
-
 }
 
 .menu {
 
     &__button {
+
         @media (max-width: $breakpointMedium) {
             position: fixed;
             top: 35px;
