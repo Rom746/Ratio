@@ -1,0 +1,214 @@
+.article {
+    position: relative;
+
+    &__title {
+        padding-top: 13px;
+
+        @media (min-width: $breakpointMedium) {
+            max-width: 690px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            padding-top: 42px;
+        }
+    }
+
+
+    &__inner {
+        margin: 0 auto;
+
+
+        @media (min-width: $breakpointMedium) {
+            max-width: 592px;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            max-width: 652px;
+        }
+    }
+
+    &__row {
+
+        display: none;
+
+        @media (min-width: $breakpointMedium) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 8px 0;
+            font-size: 12px;
+            line-height: 16px;
+            color: $color--secondary;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            padding-top: 17px;
+            padding-bottom: 13px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__tag {
+
+        text-align: center;
+
+        display: none;
+
+        @media (min-width: $breakpointMedium) {
+            display: block;
+            padding-bottom: 8px;
+            font-size: 12px;
+            line-height: 16px;
+            color: $color--secondary;
+            text-align: center;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+
+    &__text {
+        padding-top: 19px;
+
+        & p:not(:last-child) {
+            padding-bottom: 25px;
+        }
+
+        @media (min-width: $breakpointMedium) and (max-width: $breakpointLarge) {
+            padding-top: 0;
+        }
+    }
+
+}
+
+.author {
+
+    &__tag {
+        padding-top: 72px;
+        padding-bottom: 8px;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color--secondary;
+        text-transform: uppercase;
+
+        @media (min-width: $breakpointMedium) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            font-size: 20px;
+        }
+    }
+
+    &__inner {
+        padding-top: 7px;
+        padding-bottom: 30px;
+
+        @media (min-width: $breakpointMedium) {
+            display: flex;
+
+            gap: 37px;
+            justify-content: center;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            padding-bottom: 163px;
+        }
+    }
+
+    &__image {
+        flex-shrink: 0;
+
+        width: 82px;
+        height: 82px;
+        background: url(../img/avatar.png), #C4C4C4;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+
+        @media (min-width: $breakpointMedium) {
+            width: 160px;
+            height: 160px;
+        }
+    }
+
+    &__content {
+
+        @media (min-width: $breakpointMedium) {
+            max-width: 326px;
+        }
+
+        @media (min-width: $breakpointLarge) {
+            max-width: 458px;
+        }
+    }
+
+    &__title {
+        @media (max-width: $breakpointMedium) {
+            padding-bottom: 54px;
+            margin-top: -53px;
+            margin-left: 97px;
+
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__link {
+        text-align: left;
+    }
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    &__btn {
+        @media (min-width: $breakpointMedium) {
+            &:hover {
+                path {
+                    stroke: $color--primary;
+                }
+
+                rect {
+                    fill: $white;
+                }
+            }
+        }
+    }
+
+    &__link {
+        font-weight: 700;
+        padding-left: 3px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__prev-btn {
+        padding-right: 34px;
+    }
+
+    &__next-btn {
+        padding-left: 34px;
+    }
+}

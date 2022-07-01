@@ -1,5 +1,5 @@
 import '../css/style.scss'
-import { burgerMenu } from './header'
+import { burgerMenu } from '../js/header'
 
 burgerMenu();
 

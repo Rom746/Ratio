@@ -14,7 +14,8 @@ module.exports = defineConfig({
       input: {
         main: resolve(root, 'index.html'),
         about: resolve(root, 'about', 'index.html'),
-        blog: resolve(root, 'blog', 'index.html')
+        blog: resolve(root, 'blog', 'index.html'),
+        article: resolve(root, 'article', 'index.html')
       }
     }
   }
